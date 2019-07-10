@@ -1,0 +1,54 @@
+<template>
+    <div class="story__pictures">
+        <img src="@/assets/story-1.jpeg" alt="Couple with ne homes" class="story__img--1">
+        <img src="@/assets/story-2.jpeg" alt="new house" class="story__img--2">
+    </div>
+</template>
+<style lang="scss">
+.story {
+    
+    &__pictures {
+        background-color: $color-primary;
+        grid-column: full-start / col-end 4;
+        background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(../../../assets/back.jpg);
+        background-size: cover;
+
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1 / -1;
+            padding: 6rem;
+
+        }
+    }
+
+    &__img--1 {
+        width: 100%;
+        grid-row: 2 / 6;
+        grid-column: 2 / 6;
+        box-shadow: 0 2rem 5rem rgba(#000, .1);
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1 / 5;
+            grid-row: 1 / -1;
+
+        }
+    }
+
+    &__img--2 {
+        width: 115%;
+        grid-row: 4 / 6;
+        grid-column: 4 / 7;
+        z-index: 20;
+        box-shadow: 0 2rem 5rem rgba(#000, .2);
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-row: 1 / -1;
+            width: 100%;
+        }
+    }
+}
+</style>
