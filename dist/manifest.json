@@ -1,0 +1,15 @@
+{
+  "name": "natours",
+  "short_name": "natours",
+  "icons": [
+    {
+      "src": "./img/icons/favicon.png",
+      "sizes": "216x216",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#4DBA87"
+}

@@ -1,4 +1,4 @@
-# nexter
+# natours
 
 ## Project setup
 ```
